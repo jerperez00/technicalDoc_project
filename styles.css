@@ -33,3 +33,7 @@ header{
 .indentado{
     padding-left: 1.5rem;
 }
+
+.funcion, .keyword{
+    font-weight: 300;
+}
