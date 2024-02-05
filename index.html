@@ -104,13 +104,29 @@
                     <h2>Estructuras de Control de Flujo</h2>
                     <p>Python soporta las estructuras de control de flujo típicas, incluyendo <code>if</code>, <code>elif</code>, <code>else</code> para la toma de decisiones, y <code>for</code> y <code>while</code> para los bucles. Por ejemplo: </p>
                     <code>
-                        <p class="comentario"># Uso de if, elif, else</p>
-                        <p>x = <span class="number">5</span></p>
-                        <span class="keyword">if</span> x > <span class="number">0</span>:
-                        <p class="indentado"><span class="funcion">print</span>("x es positivo")</p>
-                        <p><span class="keyword">if</span> x < <span class="number">0</span>:</p>
-                        <p class="indentado"><span class="funcion">print</span>("x es negativo")</p>
-                        
+                        <div class="bloque">
+                            <p class="comentario"># Uso de if, elif, else</p>
+                            <p>x = <span class="number">5</span></p>
+                            <span class="keyword">if</span> x > <span class="number">0</span>:
+                            <p class="indentado"><span class="funcion">print</span>("x es positivo")</p>
+                            <p><span class="keyword">if</span> x < <span class="number">0</span>:</p>
+                            <p class="indentado"><span class="funcion">print</span>("x es negativo")</p>
+                            <p><span class="keyword">elif</span> x < <span class="number">0</span>:</p>
+                            <p class="indentado"><span class="funcion">print</span>("x es negativo")</p>
+                            <p><span class="keyword">else</span>:</p>
+                            <p class="indentado"><span class="funcion">print</span>("x es cero")</p>
+                        </div>
+                        <div class="bloque">
+                            <p class="comentario"># Uso de for</p>
+                            <p><span class="keyword">for</span> i <span class="funcion">in range </span>(<span class="number">5</span>):</p>
+                            <p class="indentado"><span class="funcion">print</span>(i)</p>
+                        </div>
+                        <div class="bloque">
+                            <p class="comentario"># Uso de while</p>
+                            <p><span class="keyword">while</span> i < <span class="number">5</span>:</p>
+                            <p class="indentado"><span class="funcion">print</span>(i)</p>
+                            <p class="indentado">i += <span class="number">1</span></p>
+                        </div>
                     </code>
                 </div>
             </article>
