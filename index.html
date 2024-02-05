@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>technical-doc</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>Python Documentation</header>
+        <ul>
+           <li><a href="#Introduccion">Introduccion</a></li>
+           <li><a href="#Instalacion">Instalacion</a></li>
+           <li><a href="#Sintaxis_basica">Sintaxis basica</a></li>
+           <li><a href="#Tipos_de_datos">Tipos_de_datos</a></li>
+           <li><a href="#Funciones_y_metodos">Funciones y metodos</a></li>
+           <li><a href="#Bibliotecas_y_modulos">Bibliotecas y modulos</a></li>
+           <li><a href="Ejemplos_de_codigo">Ejemplos de codigo</a></li>
+           <li><a href="Mejores_practicas">Mejores practicas</a></li>
+           <li><a href="Referencias_y_recursos_adicionales">Referencias y recursos_adicionales</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduccion">
+            <header>Introduccion</header>
+            <article>
+                <p>Python es un lenguaje de programación de alto nivel, interpretado y de propósito general, que se ha vuelto increíblemente popular debido a su sintaxis clara y legible. Fue creado por Guido van Rossum y se lanzó por primera vez en 1991.</p>
+                <p>Python es dinámico y soporta múltiples paradigmas de programación, incluyendo procedimental, orientado a objetos e incluso funcional. Es ampliamente utilizado para una variedad de aplicaciones, desde desarrollo web y análisis de datos, hasta inteligencia artificial y aprendizaje automático.</p>
+                <p>Una de las mayores fortalezas de Python es su comunidad vibrante y activa, que contribuye a un ecosistema robusto de bibliotecas y marcos de trabajo. Esto hace que Python sea una excelente opción para principiantes y expertos por igual.</p>
+                <p>Python también se destaca por su filosofía de diseño, resumida en el Zen de Python, una colección de 19 “aforismos” que sirven como guía para escribir buen código Python. Algunos de estos principios incluyen: “La legibilidad cuenta”, “Los errores nunca deberían pasar en silencio” y “Debería haber una, y preferiblemente solo una, manera obvia de hacerlo”.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Instalacion">
+            <header>Instalacion</header>
+            <article>
+                <div>
+                    <h2>Windows</h2>
+                    <ol>
+                        <li>Ve al sitio web oficial de Python en <a href="https://www.python.org/" target="_blank">https://www.python.org/</a></li>
+                        <li>Haz clic en la sección de descargas y selecciona la versión de Python que deseas instalar. Para la mayoría de los usuarios, la última versión será la mejor opción.</li>
+                        <li>Descarga el instalador de Python y ejecútalo.</li>
+                        <li>Asegúrate de marcar la casilla “Add Python to PATH” antes de hacer clic en “Install Now”. Esto te permitirá ejecutar Python desde cualquier terminal.</li>
+                    </ol>
+                </div>
+                <div>
+                    <h2>macOS</h2>
+                    <ol>
+                        <li>Abre una terminal.</li>
+                        <li>Si no tienes Homebrew, puedes instalarlo con el siguiente comando: <code>"/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)""</code></li>
+                        <li>
+                            Una vez que tienes Homebrew, puedes instalar Python con el comando: <code>brew install python</code>
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <h2>Linux</h2>
+                    <p>
+                        Muchas distribuciones de Linux vienen con Python preinstalado. Puedes verificar tu versión de Python con el comando <code>python --version</code> o <code>python3 --version</code>. Si necesitas instalar o actualizar Python, puedes usar el gestor de paquetes de tu distribución. Por ejemplo, en Ubuntu puedes usar <code>apt</code>:
+                    </p>
+                    <ol>
+                        <li>Abre una terminal</li>
+                        <li>Actualiza el índice de paquetes con el comando: <code>sudo apt update</code></li>
+                        <li>Instala Python con el comando: <code>sudo apt install python3</code></li>
+                    </ol>
+                    <p>Ahora deberías tener Python instalado en tu sistema. Recuerda que siempre puedes verificar tu instalación ejecutando <code>python --version</code> en la terminal para ver la versión de Python que tienes instalada.</p>
+                </div>
+            </article>
+        </section>
+        <section class="main-section" id="Sintaxis_basica">
+            <header>Sintaxis basica</header>
+            <article>
+                <div>
+                    <h2>Indentacion</h2>
+                    <p>Python utiliza la indentación para delimitar bloques de código. A diferencia de otros lenguajes que utilizan llaves <code>{}</code> o palabras clave como <code>begin</code> y <code>end</code>,Python utiliza la indentación para determinar el inicio y el fin de los bloques de código. Por ejemplo:</p>
+                    <code>
+                        <p>if 5 > <span>2:</span></p>
+                        <p>print("Cinco es mayor que dos")</p>  
+                    </code>
+                </div>
+                <div>
+                    <h2>Variables</h2>
+                    <p>En Python, las variables se crean cuando se les asigna un valor por primera vez. No es necesario declarar el tipo de la variable. Por ejemplo:</p>
+                    <code>
+                        <p>x = <span>5</span></p>
+                        <p>y = "Hola, mundo"</p>
+                    </code>
+                </div>
+                <div>
+                    <h2>Comentarios</h2>
+                    <p>
+                        Los comentarios en Python comienzan con un <code>#</code>.Todo lo que sigue al <code>#</code>en la misma línea es considerado un comentario.
+                    </p>
+                    <code>
+                        <p class="comentario"># Esto es un comentario</p>
+                        <p>print ("Hola, mundo") <p class="comentario"> # Esto tambien es un comentario</p></p> 
+                    </code>
+                </div>
+                <div>
+                    <h2>Operadores</h2>
+                    <p>Python soporta una variedad de operadores, incluyendo operadores aritméticos ( <code>+</code>, <code>-</code>,<code>*</code>,<code>/</code>,<code>**</code>,<code>%</code>,<code>//</code>), operadores de asignacion (<code>=</code>,<code>+=</code>,<code>-=</code>, etc.), operadores lógicos (<code>and</code>,<code>or</code>,<code>not</code>), entre otros.</p>
+                </div>
+                <div>
+                    <h2>Estructuras de Control de Flujo</h2>
+                    <p>Python soporta las estructuras de control de flujo típicas, incluyendo <code>if</code>, <code>elif</code>, <code>else</code> para la toma de decisiones, y <code>for</code> y <code>while</code> para los bucles. Por ejemplo: </p>
+                    <code>
+                        <p class="comentario"></p>
+                    </code>
+                </div>
+            </article>
+        </section>
+        <section class="main-section" id="Tipos_de_datos">
+            <header>Tipos de datos</header>
+        </section>
+        <section class="main-section" id="Funciones_y_metodos">
+            <header>Funciones y metodos</header>
+        </section>
+        <section class="main-section" id="Bibliotecas_y_modulos">
+            <header>Bibliotecas y modulos</header>
+        </section>
+        <section class="main-section" id="Ejemplos_de_codigo">
+            <header>Ejemplos de codigo</header>
+        </section>
+        <section class="main-section" id="Mejores_practicas">
+            <header>Mejores practicas</header>
+        </section>
+        <section class="main-section" id="Referencias_y_recursos_adicionales">
+            <header>Referencias y recursos_adicionales</header>
+        </section>
+    </main>
+</body>
+</html>
