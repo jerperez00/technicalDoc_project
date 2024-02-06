@@ -16,9 +16,9 @@
            <li><a href="#Tipos_de_datos">Tipos_de_datos</a></li>
            <li><a href="#Funciones_y_metodos">Funciones y metodos</a></li>
            <li><a href="#Bibliotecas_y_modulos">Bibliotecas y modulos</a></li>
-           <li><a href="Ejemplos_de_codigo">Ejemplos de codigo</a></li>
-           <li><a href="Mejores_practicas">Mejores practicas</a></li>
-           <li><a href="Referencias_y_recursos_adicionales">Referencias y recursos_adicionales</a></li>
+           <li><a href="#Ejemplos_de_codigo">Ejemplos de codigo</a></li>
+           <li><a href="#Mejores_practicas">Mejores practicas</a></li>
+           <li><a href="#Referencias_y_recursos_adicionales">Referencias y recursos_adicionales</a></li>
         </ul>
     </nav>
     <main id="main-doc">
@@ -191,6 +191,31 @@
                         }
                     </code></pre>
                 </div>
+                <div>
+                    <h2>Comprension de listas</h2>
+                    <p>La comprensión de listas es una característica poderosa en Python que permite crear listas de manera concisa y eficiente. Aquí te presento cómo funciona:</p>
+                    <div>
+                        <h3>Sintaxis Básica</h3>
+                        <p>La sintaxis básica de la comprensión de listas en Python es la siguiente:</p>
+                        <pre><code>
+                            nueva_lista = [ expresion <span class="keyword">for</span> elemento <span class="keyword">in</span> lista <span class="funcion">if</span> condicion ]
+                        </code></pre>
+                        <p>Esta línea de código genera una nueva lista ejecutando la <code>expresion</code> en la <code>lista</code> original que cumple con la <code>condicion</code>.</p>
+                    </div>
+                    <div>
+                        <h3>Ejemplos</h3>
+                        <p>Aquí tienes algunos ejemplos de cómo puedes usar la comprensión de listas en Python:</p>
+                        <pre><code>
+                            cuadrados = [ x**<span class="number">2</span></span><span class="keyword"> for</span> x <span class="keyword">in</span><span class="funcion"> range</span>(<span class="number">10</span>) <span class="keyword">if</span> x % <span class="number">2</span> == <span class="number">0</span> ]
+                        </code></pre>
+                        <p>Este código genera una lista de los números pares del 0 al 9.</p>
+
+                        <pre><code>
+                            pares = [ (x, y) <span class="keyword">for</span> x <span class="keyword">in</span> <span class="funcion">range</span> (<span class="number">5</span>) <span class="keyword">for</span> y <span class="keyword">in</span> <span class="funcion">range</span> (<span class="number">5</span>) <span class="keyword">if</span> x != y ]
+                        </code></pre>
+                        <p>Este código genera una lista de todos los pares de números del 0 al 4, excluyendo los pares con dos números iguales.</p>
+                    </div>
+                </div>
             </article>
         </section>
         <section class="main-section" id="Funciones_y_metodos">
@@ -225,7 +250,29 @@
         </section>
         <section class="main-section" id="Bibliotecas_y_modulos">
             <header>Bibliotecas y modulos</header>
-            
+            <div>
+                <h2>Módulos</h2>
+                <p>Un módulo en Python es simplemente un archivo que contiene definiciones y declaraciones de funciones, variables y clases. Puedes crear tu propio módulo simplemente creando un nuevo archivo <code>.py</code>.</p>
+                <p>Para usar un módulo en tu código, puedes usar la declaración <code>import</code>. Por ejemplo, si tienes un módulo llamado <code>mi_modulo.py</code>, puedes importarlo de la siguiente manera:</p>
+                <pre>
+                    <code><span class="funcion">import</span> mi_modulo</code></pre>
+                <p>Ahora puedes acceder a las funciones y variables definidas en <code>mi_modulo</code> usando la sintaxis <code>mi_modulo.nombre_funcion</code> o <code>mi_modulo.nombre_variable</code>.</p>
+            </div>
+            <div>
+                <h2>Bibliotecas</h2>
+                <p>Una biblioteca en Python es una colección de módulos. Python viene con una biblioteca estándar que incluye muchos módulos útiles, como <code>math</code>, <code>datetime</code>, <code>os</code>, <code>json</code>, y muchos más.</p>
+                <p>Además de la biblioteca estándar, hay miles de bibliotecas de terceros disponibles que puedes instalar y usar en tus proyectos. Algunas de las bibliotecas de terceros más populares incluyen:</p>
+                <ul>
+                    <li><code>numpy</code>: Una biblioteca para el cálculo numérico en Python.</li>
+                    <li><code>pandas</code>: Una biblioteca para la manipulación y análisis de datos.</li>
+                    <li><code>matplotlib</code>: Una biblioteca para la creación de gráficos y visualizaciones.</li>
+                    <li><code>requests</code>: Una biblioteca para hacer solicitudes HTTP.</li>
+                    <li><code>tensorflow</code>: Una biblioteca para el aprendizaje automático y la inteligencia artificial.</li>
+                </ul>
+                <p>Puedes instalar estas bibliotecas usando<code>pip</code>, el gestor de paquetes de Python. Por ejemplo, para instalar <code>requests</code>, puedes usar el siguiente comando:</p>
+                <pre>
+                    <code>pip install requests</code></pre>
+            </div>
         </section>
         <section class="main-section" id="Ejemplos_de_codigo">
             <header>Ejemplos de codigo</header>
