@@ -251,14 +251,6 @@
         <section class="main-section" id="Bibliotecas_y_modulos">
             <header>Bibliotecas y modulos</header>
             <div>
-                <h2>Módulos</h2>
-                <p>Un módulo en Python es simplemente un archivo que contiene definiciones y declaraciones de funciones, variables y clases. Puedes crear tu propio módulo simplemente creando un nuevo archivo <code>.py</code>.</p>
-                <p>Para usar un módulo en tu código, puedes usar la declaración <code>import</code>. Por ejemplo, si tienes un módulo llamado <code>mi_modulo.py</code>, puedes importarlo de la siguiente manera:</p>
-                <pre>
-                    <code><span class="funcion">import</span> mi_modulo</code></pre>
-                <p>Ahora puedes acceder a las funciones y variables definidas en <code>mi_modulo</code> usando la sintaxis <code>mi_modulo.nombre_funcion</code> o <code>mi_modulo.nombre_variable</code>.</p>
-            </div>
-            <div>
                 <h2>Bibliotecas</h2>
                 <p>Una biblioteca en Python es una colección de módulos. Python viene con una biblioteca estándar que incluye muchos módulos útiles, como <code>math</code>, <code>datetime</code>, <code>os</code>, <code>json</code>, y muchos más.</p>
                 <p>Además de la biblioteca estándar, hay miles de bibliotecas de terceros disponibles que puedes instalar y usar en tus proyectos. Algunas de las bibliotecas de terceros más populares incluyen:</p>
@@ -273,9 +265,40 @@
                 <pre>
                     <code>pip install requests</code></pre>
             </div>
+            <div>
+                <h2>Módulos</h2>
+                <p>Un módulo en Python es simplemente un archivo que contiene definiciones y declaraciones de funciones, variables y clases. Puedes crear tu propio módulo simplemente creando un nuevo archivo <code>.py</code>.</p>
+                <p>Para usar un módulo en tu código, puedes usar la declaración <code>import</code>. Por ejemplo, si tienes un módulo llamado <code>mi_modulo.py</code>, puedes importarlo de la siguiente manera:</p>
+                <pre>
+                    <code><span class="funcion">import</span> mi_modulo</code></pre>
+                <p>Ahora puedes acceder a las funciones y variables definidas en <code>mi_modulo</code> usando la sintaxis <code>mi_modulo.nombre_funcion</code> o <code>mi_modulo.nombre_variable</code>.</p>
+            </div>
         </section>
         <section class="main-section" id="Ejemplos_de_codigo">
             <header>Ejemplos de codigo</header>
+            <article>
+                <pre><code>
+                    <span class="comentario"># Ejemplo de Código: Números perfectos en python</span>
+                    
+                    <span class="comentario"># Definimos una función para verificar si un número es perfecto</span>
+                    <span class="keyword">def</span> <span class="metodo">es_perfecto</span>(n):
+                        suma = <span class="number">0</span>
+                        <span class="keyword">for</span> <span class="keywor">in</span> <span class="funcion">range</span>(<span class="number">1</span>, n):
+                            <span class="keyword">if</span> n % i == <span class="number">0</span>:
+                                suma += i
+                        <span class="keyword">return</span> suma == n
+                    
+                    <span class="comentario"># Creamos una lista de números del 1 al 1000</span>
+                    numeros = <span class="funcion">list</span>(<span class="funcion">range</span>(<span class="number">1</span>, <span class="number">1001</span> ))
+
+                    <span class="comentario"># Usamos comprensión de lista para generar una nueva lista de solo los números perfectos</span>
+                    numeros_perfectos = [n <span class="keyword">for</span> n <span class="keyword">in</span> numeros <span class="keyword">if</span> es_perfecto(n)]
+
+                    <span class="comentario"># Imprimimos la lista de números perfectos</span>
+                    <span class="funcion">print</span>("Los números perfectos en la lista son:", numeros_perfectos)
+                </code></pre>
+                <p>Este código primero define una función <code>es_perfecto</code> que toma un número <code>n</code> y devuelve <code>True</code> si <code>n</code> es un número perfecto y <code>False</code> en caso contrario. Luego, crea una lista de números del 1 al 1000 y utiliza una comprensión de lista para generar una nueva lista de solo los números perfectos. Finalmente, imprime esta lista de números perfectos.</p>
+            </article>
         </section>
         <section class="main-section" id="Mejores_practicas">
             <header>Mejores practicas</header>
