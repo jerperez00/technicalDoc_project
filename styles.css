@@ -2,10 +2,16 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.95rem;
 }
+@media screen and (max-width: 768px) {
+    nav {
+      width: 100%; /* Hacer que la barra de navegación ocupe todo el ancho en pantallas pequeñas */
+    }
+  }
 html{
     box-sizing: border-box;
     background-color: rgba(6, 45, 15, 3%);
     padding: 0.5rem 1rem;
+    color: rgb(77, 78, 83);
 }
 
 .comentario{
@@ -16,7 +22,9 @@ header{
     font-weight: 800;
     padding: 2rem 0;
 }
-
+header, h2,h3{
+    color: black;
+}
 h2{
     padding-left: 1rem;
     font-size: 1.1rem;
@@ -71,9 +79,7 @@ code, code span{
     font-size: 0.8rem;
     font-weight: 400;
 }
-.indentado{
-    padding-left: 1.5rem;
-}
+
 
 ol{
     margin: 0;
@@ -91,4 +97,57 @@ p{
 }
 .metodo{
     color: rgb(111, 49, 226);
+}
+
+/* Estilo para el nav */
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0; /* Para que ocupe toda la altura de la ventana */
+    width: 200px; /* Ancho deseado para la barra de navegación */
+    background-color: #333; /* Color de fondo */
+}
+  /* Estilo para el main */
+main {
+    margin-left: 220px; /* El mismo ancho de la barra de navegación más un espacio adicional */
+    padding: 20px; /* Ajusta el relleno según sea necesario */
+}
+  
+  /* Estilo para la lista de enlaces */
+nav ul {
+    list-style: none; /* Quitamos los puntos de la lista */
+    padding: 0;
+}
+  
+  /* Estilo para los elementos de la lista */
+nav ul li {
+    padding: 10px;
+}
+
+ul:last-of-type{
+    list-style: none;
+  }
+
+  /* Estilo para los enlaces */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+  
+  /* Cambios adicionales para mejorar la apariencia */
+nav ul li:hover {
+    background-color: #555;
+}
+  
+nav ul li a:hover {
+    color: #25c45d; /* Cambio de color al pasar el ratón */
+}
+
+nav header{
+    color: #25c45d; 
+}
+
+a:not(nav a):visited{
+    color: #005cc5;
 }
