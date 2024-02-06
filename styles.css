@@ -5,6 +5,7 @@
 html{
     box-sizing: border-box;
     background-color: rgba(6, 45, 15, 3%);
+    padding: 0.5rem 1rem;
 }
 
 .comentario{
@@ -13,8 +14,13 @@ html{
 header{
     font-size: 1.5rem;
     font-weight: 800;
+    padding: 2rem 0;
 }
 
+h2{
+    padding-left: 1rem;
+    font-size: 1.1rem;
+}
 .number{
     color: #005cc5;
 }
@@ -59,6 +65,10 @@ code:not(pre code){
     -o-border-radius: 5px;
 }
 
+code, code span{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
 .indentado{
     padding-left: 1.5rem;
 }
@@ -68,4 +78,12 @@ ol{
 }
 li{
     margin-bottom: 10px;
+}
+
+p{
+    line-height: 1.8; 
+}
+
+.bold{
+    font-weight: bold;
 }

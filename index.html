@@ -92,9 +92,9 @@
                 </div>
                 <div>
                     <h2>Comentarios</h2>
+                    <p>Los comentarios en Python comienzan con un <code>#</code>. Todo lo que sigue al <code>#</code> en la misma línea es considerado un comentario.</p>
                     <pre>
                         <code>
-                            Los comentarios en Python comienzan con un <code>#</code>.Todo lo que sigue al <code>#</code>en la misma línea es considerado un comentario.
                             <span class="comentario"># Esto es un comentario</span>
                             <span class="funcion">print</span>("Hola, mundo")<span class="comentario"> #Esto tambien es un comentario</span> 
                         </code>
@@ -121,7 +121,7 @@
                             <span class="funcion indentado">print</span>("x es cero")
 
 
-                            # Uso de for
+                            <span class="comentario"># Uso de for</span>
                             <span class="keyword">for</span> i <span class="funcion">in range </span>(<span class="number">5</span>):
                             <span class="funcion">print</span>(i)
 
@@ -137,6 +137,61 @@
         </section>
         <section class="main-section" id="Tipos_de_datos">
             <header>Tipos de datos</header>
+            <article>
+                <p>Python tiene varios tipos de datos estándar que se utilizan para definir las operaciones posibles de ellos y el método de almacenamiento.</p>
+                <div>
+                    <h2>Números</h2>
+                    <p>Python soporta diferentes tipos numéricos:</p>
+                    <ul>
+                        <li><span class="bold">int</span>: Enteros positivos o negativos sin un punto decimal.</li>
+                        <li><span class="bold">float</span>: Número real con un punto decimal.</li>
+                        <li><span class="bold">complex</span>: Números complejos, se definen utilizando la sintaxis <code>x + yj</code>.</li>
+                    </ul>
+                    <pre><code>
+                        x = <span class="number">10</span> <span class="comentario"># int</span>
+                        y = <span class="number">10.5</span> <span class="comentario"># float</span> 
+                        z = <span class="number">1j</span> <span class="comentario"># complex</span> 
+                    </code></pre>
+                </div>
+                <div>
+                    <h2>Cadenas de texto (str)</h2>
+                    <p>Las cadenas de texto en Python se crean utilizando comillas simples o dobles. Python también soporta cadenas multilínea.</p>
+                    <pre><code>
+                        s = "Hola, mundo"
+                    </code></pre>
+                </div>
+                <div>
+                    <h2>Listas</h2>
+                    <p>Las listas son colecciones ordenadas y modificables de elementos. Los elementos de una lista están indexados y se permite la duplicación de elementos.</p>
+                    <pre><code>
+                        lista = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]
+                    </code></pre>
+                </div>
+                <div>
+                    <h2>Tuplas</h2>
+                    <p>Las tuplas son colecciones ordenadas e inmutables de elementos. Al igual que las listas, los elementos de una tupla están indexados y se permite la duplicación de elementos.</p>
+                    <pre><code>
+                        tupla = (<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>)
+                    </code></pre>
+                </div>
+                <div>
+                    <h2>Conjuntos</h2>
+                    <p>Los conjuntos son colecciones no ordenadas de elementos únicos.</p>
+                    <pre><code>
+                        conjunto = {<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>}
+                    </code></pre>
+                </div>
+                <div>
+                    <h2>Diccionarios</h2>
+                    <p>Los diccionarios son colecciones no ordenadas de pares clave-valor.</p>
+                    <pre><code>
+                        diccionario = {
+                            "nombre": "Juan",
+                            "edad" : <span class="number">30</span>
+                        }
+                    </code></pre>
+                </div>
+            </article>
         </section>
         <section class="main-section" id="Funciones_y_metodos">
             <header>Funciones y metodos</header>
