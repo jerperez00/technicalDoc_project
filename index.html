@@ -47,7 +47,7 @@
                     <h2>macOS</h2>
                     <ol>
                         <li>Abre una terminal.</li>
-                        <li>Si no tienes Homebrew, puedes instalarlo con el siguiente comando: <code>"/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)""</code></li>
+                        <li>Si no tienes Homebrew, puedes instalarlo con el siguiente comando: <code>"/bin/bash -c $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></li>
                         <li>
                             Una vez que tienes Homebrew, puedes instalar Python con el comando: <code>brew install python</code>
                         </li>
@@ -73,28 +73,32 @@
                 <div>
                     <h2>Indentacion</h2>
                     <p>Python utiliza la indentación para delimitar bloques de código. A diferencia de otros lenguajes que utilizan llaves <code>{}</code> o palabras clave como <code>begin</code> y <code>end</code>,Python utiliza la indentación para determinar el inicio y el fin de los bloques de código. Por ejemplo:</p>
-                    <code>
-                        <p><span class="keyword">if</span> <span class="number">5</span> > <span class="number">2</span>:</p>
-                        <p class="indentado"><span class="funcion">print</span>("Cinco es mayor que dos")</p>  
-                    </code>
+                    <pre>
+                        <code>
+                            <span class="keyword">if</span> <span class="number">5</span> > <span class="number">2</span>:
+                            <span class="indentado funcion">print</span>("Cinco es mayor que dos") 
+                        </code>
+                    </pre>
                 </div>
                 <div>
                     <h2>Variables</h2>
                     <p>En Python, las variables se crean cuando se les asigna un valor por primera vez. No es necesario declarar el tipo de la variable. Por ejemplo:</p>
-                    <code>
-                        <p>x = <span class="number">5</span></p>
-                        <p>y = "Hola, mundo"</p>
-                    </code>
+                    <pre>
+                        <code>
+                            x = <span class="number">5</span>
+                            y = "Hola, mundo"
+                        </code>
+                    </pre>
                 </div>
                 <div>
                     <h2>Comentarios</h2>
-                    <p>
-                        Los comentarios en Python comienzan con un <code>#</code>.Todo lo que sigue al <code>#</code>en la misma línea es considerado un comentario.
-                    </p>
-                    <code>
-                        <p class="comentario"># Esto es un comentario</p>
-                        <div class="inline"><span class="funcion">print</span>("Hola, mundo") <p class="comentario"> # Esto tambien es un comentario</p></div> 
-                    </code>
+                    <pre>
+                        <code>
+                            Los comentarios en Python comienzan con un <code>#</code>.Todo lo que sigue al <code>#</code>en la misma línea es considerado un comentario.
+                            <span class="comentario"># Esto es un comentario</span>
+                            <span class="funcion">print</span>("Hola, mundo")<span class="comentario"> #Esto tambien es un comentario</span> 
+                        </code>
+                    </pre>
                 </div>
                 <div>
                     <h2>Operadores</h2>
@@ -103,31 +107,31 @@
                 <div>
                     <h2>Estructuras de Control de Flujo</h2>
                     <p>Python soporta las estructuras de control de flujo típicas, incluyendo <code>if</code>, <code>elif</code>, <code>else</code> para la toma de decisiones, y <code>for</code> y <code>while</code> para los bucles. Por ejemplo: </p>
-                    <code>
-                        <div class="bloque">
-                            <p class="comentario"># Uso de if, elif, else</p>
-                            <p>x = <span class="number">5</span></p>
+                    <pre>
+                        <code>
+                            <span class="comentario"># Uso de if, elif, else</span>
+                            x = <span class="number">5</span>
                             <span class="keyword">if</span> x > <span class="number">0</span>:
-                            <p class="indentado"><span class="funcion">print</span>("x es positivo")</p>
-                            <p><span class="keyword">if</span> x < <span class="number">0</span>:</p>
-                            <p class="indentado"><span class="funcion">print</span>("x es negativo")</p>
-                            <p><span class="keyword">elif</span> x < <span class="number">0</span>:</p>
-                            <p class="indentado"><span class="funcion">print</span>("x es negativo")</p>
-                            <p><span class="keyword">else</span>:</p>
-                            <p class="indentado"><span class="funcion">print</span>("x es cero")</p>
-                        </div>
-                        <div class="bloque">
-                            <p class="comentario"># Uso de for</p>
-                            <p><span class="keyword">for</span> i <span class="funcion">in range </span>(<span class="number">5</span>):</p>
-                            <p class="indentado"><span class="funcion">print</span>(i)</p>
-                        </div>
-                        <div class="bloque">
-                            <p class="comentario"># Uso de while</p>
-                            <p><span class="keyword">while</span> i < <span class="number">5</span>:</p>
-                            <p class="indentado"><span class="funcion">print</span>(i)</p>
-                            <p class="indentado">i += <span class="number">1</span></p>
-                        </div>
-                    </code>
+                            <span class="funcion indentado">print</span>("x es positivo")
+                            <span class="keyword">if</span> x < <span class="number">0</span>:  
+                            <span class="funcion indentado">print</span>("x es negativo")
+                            <span class="keyword">elif</span> x < <span class="number">0</span>:
+                            <span class="funcion indentado">print</span>("x es negativo")
+                            <span class="keyword">else</span>:
+                            <span class="funcion indentado">print</span>("x es cero")
+
+
+                            # Uso de for
+                            <span class="keyword">for</span> i <span class="funcion">in range </span>(<span class="number">5</span>):
+                            <span class="funcion">print</span>(i)
+
+
+                            <span class="comentario"># Uso de while</span>
+                            <span class="keyword">while</span> i < <span class="number">5</span>:
+                            <span class="funcion">print</span>(i)
+                            <span class="indentado">i += </span> <span class="number">1</span>    
+                        </code>
+                    </pre>
                 </div>
             </article>
         </section>

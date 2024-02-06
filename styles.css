@@ -4,6 +4,7 @@
 }
 html{
     box-sizing: border-box;
+    background-color: rgba(6, 45, 15, 3%);
 }
 
 .comentario{
@@ -30,11 +31,41 @@ header{
     align-items: baseline;
 }
 
-.indentado{
-    padding-left: 1.5rem;
-}
-
 .funcion, .keyword{
     font-weight: 300;
 }
 
+pre{
+    background-color: rgba(0,0,0,3%);
+    padding: 10px;
+    margin: 0px 0px 4px;
+    border: 1px solid  rgba(188, 180, 180, 0.03);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+code:not(pre code){
+    background-color: rgba(0,0,0,3%);
+    border: 1px solid  rgba(56, 55, 55, 0.123);
+    border-radius: 5px;
+    padding: 0 0.3rem;
+    padding-bottom: 0.2rem;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.indentado{
+    padding-left: 1.5rem;
+}
+
+ol{
+    margin: 0;
+}
+li{
+    margin-bottom: 10px;
+}
